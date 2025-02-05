@@ -1,34 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Social links profile</title>
+    <style>
+        @font-face {
+            font-family: "Inter";
+            src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf) format("truetype");
+        }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            color: white;
+        }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", serif;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background: #141414;
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 385px;
+            height: 616px;
+            border-radius: 20px;
+            background: #1f1f1f;
+            padding: 40px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        .links {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-gap: 15px;
+        }
+
+        .link {
+            height: 45px;
+            width: 100%;
+            background: #333333;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: hsl(0, 0%, 100%);
+            font-weight: 700;
+        }
+        .link:active,
+        .link:focus,
+        .link:hover {
+            background: hsl(75, 94%, 57%);
+            color: hsl(0, 0%, 8%);
+        }
+
+        h1 {
+            color: hsl(0, 0%, 100%);
+            font-size: 26px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: hsl(75, 94%, 57%);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        p {
+            color: hsl(0, 0%, 82%);
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+    </style>
 </head>
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+<section>
+    <div class="container">
+        <div class="content">
+            <img src="assets/images/avatar-jessica.jpeg" alt="">
+            <h1>Jessica Randall</h1>
+            <h2>London, United Kingdom</h2>
+            <p>"Front-end developer and avid reader."</p>
+            <div class="links">
+                <div class="link">
+                    GitHub
+                </div>
+                <div class="link">
+                    Frontend Mentor
+                </div>
+                <div class="link">
+                    LinkedIn
+                </div>
+                <div class="link">
+                    Twitter
+                </div>
+                <div class="link">
+                    Instagram
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+</footer>
 </body>
 </html>
